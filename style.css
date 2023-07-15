@@ -1,0 +1,76 @@
+body {
+    height: 100vh;
+    background: linear-gradient(12deg, #c1d4e0, #1c5981);
+}
+
+.game {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    margin: 25px;
+}
+
+.container {
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-left: 20px;
+}
+
+.item {
+    width: 100px;
+    display: flex;
+    font-size: 50px;
+    height: 100px;
+    color: white;
+    background-color: #1e72aa;
+    border: 1px solid black;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+}
+
+.item:hover {
+    background-color: #c1d4e0;
+    color: #1c5981;
+    cursor: pointer;
+}
+
+.restart,
+#newGame {
+    font-size: 20px;
+    margin-top: 25px;
+    margin-left:20px;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #1c5981;
+    color: aliceblue;
+    border: none;
+}
+
+.popup {
+    background: linear-gradient(12deg, #c1d4e0, #1c5981);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 25px;
+}
+
+.popup.hide {
+    display: none;
+}
+
+#massage {
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
