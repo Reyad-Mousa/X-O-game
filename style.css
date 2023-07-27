@@ -1,5 +1,6 @@
 body {
   height: 100vh;
+  margin: 0;
   background: linear-gradient(12deg, #c1d4e0, #1c5981);
 }
 h1 {
@@ -7,6 +8,7 @@ h1 {
   color: #c1d4e0;
   top: 50px;
   position: relative;
+  z-index: 3;
 }
 
 .game {
@@ -58,7 +60,7 @@ h1 {
 }
 
 .popup {
-  background: linear-gradient(12deg, #c1d4e0, #1c5981);
+  background: linear-gradient(22deg, #c1d4e0, #1c5981);
   height: 100%;
   width: 100%;
   position: absolute;
@@ -67,7 +69,6 @@ h1 {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 10px;
   font-size: 25px;
 }
 

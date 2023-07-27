@@ -91,6 +91,8 @@ function game(id) {
   if (turn === "X" && item.innerHTML == "") {
     item.innerHTML = "X";
     turn = "O";
+  } else if (item.innerHTML === "X") {
+    return null;
   } else {
     item.innerHTML = "O";
     turn = "X";
